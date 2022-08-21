@@ -2,7 +2,9 @@ import React from "react";
 
 function About() {
     return (
-        <h1>This is the about section.</h1>
+        <div>
+            Greetings! My name is Devin Sinitiere. Since I was a child in the 90s I had toyed around with programming.
+        </div>
     );
 }
 

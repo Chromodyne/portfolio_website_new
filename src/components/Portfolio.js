@@ -6,9 +6,7 @@ function Portfolio(props) {
     return (
         <>
             <div class="container row-auto flex flex-auto justify-center">
-                <PortfolioCard cardNumber="1"/>
-
-                <PortfolioCard cardNumber="2"/>
+                <PortfolioCard />
             </div>
         </>
     );
