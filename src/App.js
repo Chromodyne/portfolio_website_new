@@ -10,8 +10,6 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <Main />
-      <Term />
       <Portfolio />
     </React.Fragment>
   )
