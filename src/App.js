@@ -1,18 +1,41 @@
-//import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation
+} from "react-router-dom";
 import Navbar from "./components/Navbar"
 import About from './components/About';
-import Main from './components/Main';
-import React from 'react';
-import Term from './components/Terminal';
+import React, { useState } from 'react';
 import Portfolio from './components/Portfolio';
 
-function App() {
+const AppRouter = () => {
+
+  const location = useLocation();
+
   return (
     <>
       <Navbar />
-      <About />
+      <Routes location={location}>
+        <Route path="/" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
     </>
+  );
+}
+
+
+function App() {
+
+  return (
+
+    <>
+      <Router>
+        <AppRouter />
+      </Router>
+    </>
+
   )
 }
 
