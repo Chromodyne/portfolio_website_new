@@ -5,17 +5,27 @@ function Portfolio(props) {
 
     return (
         <>
-            <div class="container row-auto flex flex-auto justify-center my-8">
-                <div class="mx-3">
+            <div class="grid grid-flow-row-dense grid-cols-3 ml-20">
+                <div>
                     <PortfolioCard cardNumber="1"/>
                 </div>
-                <div class="mx-3">
+                <div>
                     <PortfolioCard cardNumber="2"/>
                 </div>
                 <div>
                     <PortfolioCard cardNumber="3"/>
                 </div>
+                <div>
+                    <PortfolioCard cardNumber="4"/>
+                </div>
+                <div>
+                    <PortfolioCard cardNumber="5"/>
+                </div>
+                <div>
+                    <PortfolioCard cardNumber="6"/>
+                </div>
             </div>
+            
         </>
     );
 

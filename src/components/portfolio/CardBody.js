@@ -2,6 +2,13 @@ import React from "react";
 
 
 function CardBody(props) {
+
+    function changeText(props) {
+        if (props.cardNumber === 1) {
+            
+        }
+    }
+
     return (
         <>
             <a href="/">

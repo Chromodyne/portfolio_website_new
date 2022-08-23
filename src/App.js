@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar"
 import About from './components/About';
 import React, { useState } from 'react';
 import Portfolio from './components/Portfolio';
+import Footer from "./components/Footer"
 
 const AppRouter = () => {
 
@@ -21,6 +22,8 @@ const AppRouter = () => {
         <Route path="/" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
+      <Footer />
+
     </>
   );
 }
