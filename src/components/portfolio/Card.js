@@ -10,10 +10,8 @@ function PortfolioCard(props) {
     function chooseImage (props) {
 
         if (props.cardNumber == 1) {
-            console.log(props);
             return <img src={dummy1} alt="Img"></img>
         } else {
-            console.log(props);
             return <img src={dummy2} alt="Img"></img>
         }
     }
