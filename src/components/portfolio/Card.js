@@ -5,11 +5,25 @@ import dummy2 from "./img/dummy2.png";
 
 function PortfolioCard(props) {
 
+    console.log(props);
+
+    function chooseImage (props) {
+
+        if (props.cardNumber == 1) {
+            console.log(props);
+            return <img src={dummy1} alt="Img"></img>
+        } else {
+            console.log(props);
+            return <img src={dummy2} alt="Img"></img>
+        }
+    }
+
+
     return (
 
         <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
             <a href="/">
-                <img src={dummy1} alt="Img"></img>
+                {chooseImage(props)}
             </a>
             <div class="p-5">
                 <a href="/">
