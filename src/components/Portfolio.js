@@ -5,7 +5,7 @@ function Portfolio(props) {
 
     return (
         <>
-            <div class="grid grid-flow-row-dense grid-cols-3 ml-20">
+            <div class="bg-quaternary grid grid-flow-row-dense grid-cols-3 pl-40 pb-10">
                 <div>
                     <PortfolioCard cardNumber="1"/>
                 </div>

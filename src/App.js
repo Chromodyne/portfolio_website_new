@@ -10,6 +10,7 @@ import About from './components/About';
 import React, { useState } from 'react';
 import Portfolio from './components/Portfolio';
 import Footer from "./components/Footer"
+import Contact from "./components/Contact"
 
 const AppRouter = () => {
 
@@ -21,6 +22,7 @@ const AppRouter = () => {
       <Routes location={location}>
         <Route path="/" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
 
