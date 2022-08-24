@@ -11,7 +11,7 @@ function About() {
                 <div className="row">
                     <h1 className="text-2xl mb-6 content-center text-primary">About Me</h1>
                 </div>
-                <div className="row mx-20 text-base max-w-prose mb-10 text-primary bg-tertiary">
+                <div className="row mx-20 text-base max-w-prose mb-10 text-primary bg-tertiary rounded-md px-10 py-5">
                     <p>Greetings! My name is Devin Sinitiere. I am an aspiring software engineer from Las Vegas, NV. My primary hobbies are learning, technology, gaming, diving, and of course programming!</p> 
                     <br></br>    
                     <p>

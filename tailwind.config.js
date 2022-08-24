@@ -5,6 +5,7 @@ module.exports = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
+
     colors: {
       "primary": "#0A0908",
       "secondary": "#22333b",
@@ -12,7 +13,16 @@ module.exports = {
       "quaternary": "#A9927D",
       "quinary": "#5E503F"
     },
-    extend: {},
+
+    screens: {
+      "cs": "1360px",
+    },
+
+    extend: {
+      minHeight: (theme) => ({
+        ...theme("spacing"),
+      })
+    },
   },
   plugins: [
     require("flowbite/plugin")
