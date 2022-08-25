@@ -9,6 +9,7 @@ function Contact() {
 
 
     return (
+        
         <div className="bg-quaternary h-screen">
         <form className="bg-quaternary grid grid-flow-row-dense grid-cols-1 place-items-center">
             <label className="mt-20" for="name">Name:</label>
