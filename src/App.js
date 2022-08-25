@@ -19,11 +19,11 @@ const AppRouter = () => {
   return (
     <>
       <Navbar />
-      <Routes location={location}>
-        <Route path="/" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+        <Routes location={location}>
+          <Route path="/" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       <Footer />
 
     </>
