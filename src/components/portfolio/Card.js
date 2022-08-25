@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import dummy1 from "./img/dummy1.png";
 import dummy2 from "./img/dummy2.png";
 import atScreen from "./img/at-screenshot.png";
@@ -60,6 +61,19 @@ function PortfolioCard(props) {
         }
     }
 
+    function setLink(props) {
+        if (props.cardNumber == 1) {
+            return "https://github.com/Chromodyne/anomaly_level_mod";
+        } else if (props.cardNumber == 2) {
+            return "https://github.com/Chromodyne/the_accessible_times";
+        } else if (props.cardNumber == 3) {
+            return "https://github.com/Chromodyne/360-Degrees";
+        } else if (props.cardNumber == 4) {
+            return "https://github.com/Chromodyne/osdev";
+        }
+    }
+
+
     return (
 
         <div class="mt-10 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
@@ -72,7 +86,7 @@ function PortfolioCard(props) {
                 {chooseTitle(props)}
                 </a>
                 {chooseText(props)}
-                <a href="/" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <a href={setLink(props)} target="_blank" rel="noreferrer" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-secondary rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                     GitHub
                 </a>
             </div>
